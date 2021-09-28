@@ -1,0 +1,84 @@
+<div class="container">
+
+    <p>Agregar pelicula!</p>
+    <div class="row">
+        <div class="col-sm-6">
+        <form>
+
+            <div class="mb-3">
+                <label class="form-label">Pelicula id</label>
+                <input [(ngModel)]="movie.mov_id" type="text" class="form-control" name="nombre">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Nombre de la pelicula</label>
+                <input [(ngModel)]="movie.mov_title" type="text" class="form-control" name="nombre">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Año</label>
+                <input [(ngModel)]="movie.mov_year" type="text" class="form-control" name="nombre">
+            </div>
+                
+            <div class="mb-3">
+                <label class="form-label">Duracion</label>
+                <input [(ngModel)]="movie.mov_time" type="text" class="form-control" name="nombre">
+
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Idioma de la pelicula</label>
+                <input [(ngModel)]="movie.mov_lang" type="text" class="form-control" name="nombre">
+            </div>
+            
+            <div class="mb-3"> 
+                <label class="form-label">Fecha</label>
+                <input [(ngModel)]="movie.mov_dt_rel" type="text" class="form-control" name="nombre">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Pais</label>
+                <input [(ngModel)]="movie.mov_rel_country" type="text" class="form-control" name="nombre">
+            </div>
+                
+            <button (click)="add()" class="btn btn-primary">Agregar</button>
+        </form>
+        </div>
+        <div class="col-sm-6">
+        <form>
+            <div class="mb-3">
+                <label class="form-label">{{movie.id}}</label>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">{{movie.name}}</label>   
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">{{movie.year}}</label>
+            </div>
+        
+            <div class="mb-3">
+                <label class="form-label">{{movie.time}}</label>
+            </div>
+        
+            <div class="mb-3">
+                <label class="form-label">{{movie.language}}</label>
+            </div>
+        
+            <div class="mb-3">
+                <label class="form-label">{{movie.released}}</label>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">{{movie.country}}</label>
+            </div>
+            
+
+        
+        
+        </form>
+        </div>
+    </div>
+
+    
+</div>

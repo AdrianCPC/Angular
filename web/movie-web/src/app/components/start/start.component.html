@@ -1,0 +1,41 @@
+
+<div class="container">
+        <p>Lista de peliculas!</p>
+        <button routerLink="/add" type="button" class="btn btn-dark">Agregar</button>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Pelicula</th>
+                    <th scope="col">Año </th>
+                    <th scope="col">Duracion</th>
+                    <th scope="col">Lenguaje</th>
+                    <th scope="col">Estreno</th>
+                    <th scope="col">Pais</th>
+                    <th scope="col">Editar</th>
+                    <th scope="col">Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let movie of ListMovie">
+                    <th>{{movie.mov_id}}</th>
+                    <td>{{movie.mov_title}}</td>
+                    <td>{{movie.mov_year}}</td>
+                    <td>{{movie.mov_time}}</td>
+                    <td>{{movie.mov_lang}}</td>
+                    <td>{{movie.mov_dt_rel}}</td>
+                    <td>{{movie.mov_rel_country}}</td>
+                    <td>
+                        <button (click)="modify(movie.mov_id)" type="button" class="btn btn-primary">Editar</button>
+                    </td>
+                    <td>
+                        <button (click)="delete(movie.mov_id)" type="button" class="btn btn-danger">Eliminar</button>
+                    </td>
+                    <td></td>
+        
+                </tr>
+        
+            </tbody>
+        </table>
+</div>
