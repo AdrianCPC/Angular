@@ -14,6 +14,7 @@ export class StartComponent implements OnInit {
 
   constructor(private EquipmentService:EquipmentService, private router:Router) { }
 
+
   ngOnInit(): void {
     this.showMovies();
     

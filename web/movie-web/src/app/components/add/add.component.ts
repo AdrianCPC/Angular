@@ -24,9 +24,7 @@ export class AddComponent implements OnInit {
   }
 
   add(){
-    // delete this.movie.id;
-    this.EquipmentService.addMovie(this.movie).subscribe();
-    this.router.navigate(['/home'])
-  }
-
-}
+    // delete this.movie.mov_id;
+    this.EquipmentService.addMovie(this.movie).subscribe()
+    this.router.navigate(['/home']); 
+}}

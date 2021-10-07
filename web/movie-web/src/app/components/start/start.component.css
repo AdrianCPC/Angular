@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+#fondo {
+    margin-top: 40px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 200%
+}
+
+#add {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 100%
+}
+
+@media (max-width: 767px) {
+    .tableContainer {
+        width: 95%;
+        margin: 5%;
+        height: 90vh;
+    }
+    #fondo {
+        font-size: 100%
+    }
+    #add {
+        font-size: 50%
+    }
+}
+
+@media (max-width: 570px) {
+    #fondo {
+        font-size: 75%
+    }
+    #add {
+        font-size: 150%
+    }
+}

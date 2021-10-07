@@ -1,1 +1,45 @@
-<p>edit works!</p>
+<div id= "letter"class="container">
+    <p>Modificar Pelicula</p>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <form>
+                
+                <div class="mb-3">
+                    <label class="form-label">Nombre de Pelicula</label>
+                    <input [(ngModel)]="movie.mov_title" class="form-control" name="title" type="text">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Año</label>
+                    <input [(ngModel)]="movie.mov_year" class="form-control" name="year" type="text">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Duracion</label>
+                    <input [(ngModel)]="movie.mov_time" class="form-control" name="time" type="text">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Lenguaje</label>
+                    <input [(ngModel)]="movie.mov_lang" class="form-control" name="lang" type="text">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Fecha</label>
+                    <input [(ngModel)]="movie.mov_dt_rel" class="form-control" name="dt" type="text">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Pais</label>
+                    <input [(ngModel)]="movie.mov_rel_country" class="form-control" name="country" type="text">
+                </div>
+
+                <button (click)="change()" class="btn btn-info">guardar</button>
+            </form>
+        </div>
+
+    </div>
+
+
+</div>

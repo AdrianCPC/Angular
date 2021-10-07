@@ -1,9 +1,9 @@
 
-<div class="container">
-        <p>Lista de peliculas!</p>
-        <button routerLink="/add" type="button" class="btn btn-dark">Agregar</button>
+<div  id="fondo" class="container">
+        <button id="add" routerLink="/add" type="button" class="btn btn-info">Agregar</button>
 
-        <table class="table">
+        <div class="mt-4">
+        <table class="table table-responsive">
             <thead>
                 <tr>
                     <th scope="col">ID</th>
@@ -27,10 +27,10 @@
                     <td>{{movie.mov_dt_rel}}</td>
                     <td>{{movie.mov_rel_country}}</td>
                     <td>
-                        <button (click)="modify(movie.mov_id)" type="button" class="btn btn-primary">Editar</button>
+                        <button (click)="modify(movie.mov_id)" type="button" class="btn btn-info"><i class="fa fa-edit" id="edit"></i></button>
                     </td>
                     <td>
-                        <button (click)="delete(movie.mov_id)" type="button" class="btn btn-danger">Eliminar</button>
+                        <button id="button" (click)="delete(movie.mov_id)" type="button" class="btn btn-warning"><i class="fa fa-trash" id="delete"></i></button>
                     </td>
                     <td></td>
         
@@ -38,4 +38,5 @@
         
             </tbody>
         </table>
+        </div>
 </div>

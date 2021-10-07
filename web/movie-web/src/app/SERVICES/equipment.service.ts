@@ -6,7 +6,7 @@ import {HttpClient} from '@angular/common/http';
 })
 export class EquipmentService {
 
-  url='/movies'
+  url='/api'
   constructor(private http: HttpClient) { }
 
   //get movies
@@ -17,13 +17,13 @@ export class EquipmentService {
 
   // get a movie
   getMovie(id: string){
-    return this.http.get(this.url+'/movie/'+id)
+    return this.http.get(this.url+'/'+id)
   }
 
   // add a movies
   addMovie(movie: Movie)
-  {
-    return this.http.post(this.url, movie)
+  { console.log(movie);
+    return this.http.post(this.url,movie)
   }
 
   // delete
